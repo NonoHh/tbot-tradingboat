@@ -28,7 +28,7 @@ $TBOT_APP_HOME/tbottmux/pg_tmux_main.py -a start -c "$t_cmd" -w 'FLASK'
 
 sleep 1
 
-t_cmd="ngrok config add-authtoken $NGROK_AUTH;ngrok http $NGROK_PORT --url https://tarpon-in-quetzal.ngrok-free.app"
+t_cmd="ngrok config add-authtoken $NGROK_AUTH;ngrok http $NGROK_PORT --url=https://tarpon-in-quetzal.ngrok-free.app"
 
 $TBOT_APP_HOME/tbottmux/pg_tmux_main.py -a start -c "$t_cmd" -w 'NGROK'
 
